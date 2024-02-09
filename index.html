@@ -2,132 +2,156 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Madalena Lamy</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;700&family=Rochester&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/cecf9b33ac.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Rachel Schofield Front-end Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a29d900da0.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="hero">
-      <h3>Hi, I'm</h3>
-      <h1>Rachel Schofield</h1>
-      <h4>Front-end Developer, based in the UK</h4>
-      <a href="contact.html" class="btn contact-button">Contact me</a>
+   
+      <div class="container">
+        <nav class="d-flex justify-content-between">
+        <img src="images/logo.png" class="logo" alt=""/>
+       
+        <ul>
+          <li class="active">
+            <a href="/"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html"> About</a>
+          </li>
+          <li>
+            <a href="/work.html"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html"> Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="container">
-      <div class="row header">
-        <div class="col-12">
-          <h2>Gallery</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+             
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">Contact me</a>
+            </li>
+          </ul>
         </div>
+        </nav>
+      
+      
       </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="https://ai-quiz-question-generator.netlify.app/" target="_blank"><img src="images/pub-quiz.png" class="img-fluid gallery-image" alt="a pub quiz app screenshot"></a>
-          <h5>AI Pub Quiz Question Generator</h5>
-        </div>
-        <div class="col-sm-6">
-          <a href="https://moment-world-clock.netlify.app/" target="_blank"><img src="images/world-clock.png" class="img-fluid gallery-image" alt="a world clock app screenshot"></a>
-          <h5>World Clock Timezone App</h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="https://my-api-weather.netlify.app/" target="_blank"><img src="images/weather-app.png" class="img-fluid gallery-image" alt="a weather forecast app screenshot"></a>
-          <h5>Weather Forecast App</h5>
-        </div>
-        <div class="col-sm-6">
-          <a href="https://ai-irish-poem-generator.netlify.app/" target="_blank"><img src="images/irish-poem.png" class="img-fluid gallery-image" alt="an AI Irish poem generator screenshot"></a>
-          <h5>AI Irish Poem Generator</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row header">
-        <div class="col-12">
-          <h2>Skills
-          </h2>
-        </div>
-      </div> 
-      <div class="row align-items-center">
-        <div class="col-12 col-md-1 logo">
-          <!-- <div class="card" style="width: 18rem;">
-            <img src="images/logos/vscode_logo.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">VS Code</p>
-            </div>
-          </div> -->
-          <img src="images/logos/vscode_logo.svg" alt="VS Code Logo" class="logo img-fluid img-logo" />
-          <h6>VS Code</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/html_logo.svg" alt="HTML Logo" class="logo img-fluid img-logo" />  
-          <h6>HTML 5</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/css_logo.svg" alt="CSS Logo" class="logo img-fluid img-logo" />
-          <h6>CSS 3</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/bootstrap_logo.svg" alt="Bootsrap Logo" class="logo img-fluid img-logo" />
-          <h6>Bootstrap</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/javascript_logo.svg" alt="Javascript Logo" class="logo img-fluid img-logo" />
-          <h6>Javascript</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/react_logo.svg" alt="React Logo" class="logo img-fluid img-logo" />
-          <h6>React</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/git_logo.svg" alt="Git Logo" class="logo img-fluid img-logo" />
-          <h6>Git</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/github_logo.svg" alt="GitHub Logo" class="logo img-fluid img-logo" />
-          <h6>GitHub</h6>
-        </div>
-        <div class="col-12 col-md-1 logo">
-          <img src="images/logos/figma_icon.svg" alt="Figma Logo" class="logo img-fluid img-logo" />
-          <h6>Figma</h6>
-        </div>
-      </div>
-    </div>
+    
+    <h2 class="text-center">👋 Hi I am</h2>
+    <h1 class="text-center">Madalena Lamy</h1>
+    <h3 class="text-center mb-5
+  ">Front-end developer, based in Lisbon</h3>
     
     <div class="container">
-      <div class="row inquiry align-items-center p-5">
-        <div class="col-12 col-md-6 align-items-center">
-          <h2>Work Inquiry</h2>
-          <p class="m-0">Contact me to let me know how I can help</p>
+      <div class="row">
+        <div class="col-6">
+          <img src="images/yoga.png" class="img-fluid rounded" />
         </div>
-        <div class="col-12 col-md-6 align-items-center text-end align-text-middle">
-          <a href="contact.html" class="btn contact-button work-contact-btn">Contact me</a>
+        <div class="col-6">
+          <h2 class="mb-3">Yoga app</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.
+          </p>
+          <div class="mt-5">
+            <a href="#" class="primary-link">Launch Yoga App</a>
+          </div>
         </div>
       </div>
+      <div class="row mt-5">
+        <div class="col-6">
+          <h2 class="mb-3">Weather app</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.
+          </p>
+          <div class="mt-5">
+            <a href="#" class="primary-link">Launch Weather App</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="images/weather.png" class="img-fluid rounded" />
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-6">
+          <img src="images/yogurt.png" class="img-fluid rounded" />
+        </div>
+        <div class="col-6">
+          <h2 class="mb-3">Yogurt app</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.
+          </p>
+          <div class="mt-5">
+            <a href="#" class="primary-link">Launch Weather App</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h4>Work Inquery</h4>
+          <p class="text-muted">
+            Let's work together 
+          </p>
+          </div>
+          
+          <a href="" class="btn btn-branding text-center">Contact me</a>
+        
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+        <a href="mailto:lamymadalena@gmail.com" class="email-link">E-mail</a>
+      </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.github.com/madalenalamy" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/madalenalamy" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
